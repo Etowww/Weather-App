@@ -10,10 +10,40 @@
     <!-- Linked local javascript-->
     <script defer src="./script.js"></script>
 
-    <title>Five-Day Weather Forecast App</title>
+    <title>Weather Forecast App</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Start of side column -->
+        <aside>
+            <!-- Search bar -->
+            <h2>Search for a City:</h2>
+            <input id="citySearch" type="text" />
+            <button type="submit" class="btn" id="searchBtn">Search</button>
+            
+            <!-- Past search list -->
+            <div id="searchListContainer">
+                <h3>Past Searches:</h3>
+                <div id="pastSearchList"></div>
+            </div>
+        </aside>
+        
+        <!-- The Main Forecast Card in the center of the page-->
+        <div id="mainForecastCard"></div>
+        
+        <!-- Five-Day Forecast -->
+        <div id="fiveDayForecastContainer">
+            <h3>5-Day Forecast:</h3>
+            <div id="fiveDayForecastCards"></div>
+        </div>
+
+    </main>
+
 </body>
 
 </html>
