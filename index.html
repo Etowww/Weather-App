@@ -22,9 +22,11 @@
         <!-- Start of side column -->
         <aside>
             <!-- Search bar -->
-            <h2>Search for a City:</h2>
-            <input id="citySearch" type="text" />
-            <button type="submit" class="btn" id="searchBtn">Search</button>
+            <form id="searchBtn">
+                <h2>Search for a City:</h2>
+                <input id="citySearch" type="text" />
+                <button type="submit" class="btn">Search</button>
+            </form>
             
             <!-- Past search list -->
             <div id="searchListContainer">
@@ -32,15 +34,16 @@
                 <div id="pastSearchList"></div>
             </div>
         </aside>
-        
-        <!-- The Main Forecast Card in the center of the page-->
-        <div id="mainForecastCard"></div>
-        
-        <!-- Five-Day Forecast -->
-        <div id="fiveDayForecastContainer">
-            <h3>5-Day Forecast:</h3>
-            <div id="fiveDayForecastCards"></div>
-        </div>
+        <section>
+            <!-- The Main Forecast Card in the center of the page-->
+            <div id="mainForecastCard"></div>
+            
+            <!-- Five-Day Forecast -->
+            <div id="fiveDayForecastContainer">
+                <!-- Remember to append H3 Here-->
+                <div id="fiveDayForecastCards"></div>
+            </div>
+        </section>
 
     </main>
 
